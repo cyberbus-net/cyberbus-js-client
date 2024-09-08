@@ -4,23 +4,23 @@
 rm -rf src/types/*
 
 # Remove the old bindings
-pushd ../lemmy/crates
+pushd ../cyberbus/crates
 rm -rf **/bindings
 popd
 
-# First re-generate the types by running cargo test on lemmy
-pushd ../lemmy/scripts
+# First re-generate the types by running cargo test on cyberbus
+pushd ../cyberbus/scripts
 ./test.sh
 
 cd ../crates
 
 # Copy them over to the types folder
-cp api_common/bindings/* ../../lemmy-js-client/src/types/
-cp db_schema/bindings/* ../../lemmy-js-client/src/types/
-cp db_views/bindings/* ../../lemmy-js-client/src/types/
-cp db_views_actor/bindings/* ../../lemmy-js-client/src/types/
-cp db_views_moderator/bindings/* ../../lemmy-js-client/src/types/
-cp utils/bindings/* ../../lemmy-js-client/src/types/
+cp api_common/bindings/* ../../cyberbus-js-client/src/types/
+cp db_schema/bindings/* ../../cyberbus-js-client/src/types/
+cp db_views/bindings/* ../../cyberbus-js-client/src/types/
+cp db_views_actor/bindings/* ../../cyberbus-js-client/src/types/
+cp db_views_moderator/bindings/* ../../cyberbus-js-client/src/types/
+cp utils/bindings/* ../../cyberbus-js-client/src/types/
 
 popd
 

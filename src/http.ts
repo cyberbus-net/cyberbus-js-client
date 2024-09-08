@@ -148,17 +148,17 @@ enum HttpType {
 }
 
 /**
- * Helps build lemmy HTTP requests.
+ * Helps build cyberbus HTTP requests.
  */
-export class LemmyHttp {
+export class CyberbusHttp {
   #apiUrl: string;
   #headers: { [key: string]: string } = {};
   #pictrsUrl: string;
   #fetchFunction = fetch.bind(globalThis);
 
   /**
-   * Generates a new instance of LemmyHttp.
-   * @param baseUrl the base url, without the vX version: https://lemmy.ml -> goes to https://lemmy.ml/api/vX
+   * Generates a new instance of CyberbusHttp.
+   * @param baseUrl the base url, without the vX version: https://cyberbus.ml -> goes to https://cyberbus.ml/api/vX
    * @param headers optional headers. Should contain `x-real-ip` and `x-forwarded-for` .
    */
   constructor(
@@ -348,7 +348,7 @@ export class LemmyHttp {
   }
 
   /**
-   * Search lemmy.
+   * Search cyberbus.
    *
    * `HTTP.GET /search`
    */
@@ -1035,7 +1035,7 @@ export class LemmyHttp {
   }
 
   /**
-   * Log into lemmy.
+   * Log into cyberbus.
    *
    * `HTTP.POST /user/login`
    */

@@ -119,7 +119,7 @@ export { InstanceId } from "./types/InstanceId";
 export { InstanceWithFederationState } from "./types/InstanceWithFederationState";
 export { Language } from "./types/Language";
 export { LanguageId } from "./types/LanguageId";
-export { LemmyErrorType } from "./types/LemmyErrorType";
+export { CyberbusErrorType } from "./types/CyberbusErrorType";
 export { LinkMetadata } from "./types/LinkMetadata";
 export { ListCommentLikes } from "./types/ListCommentLikes";
 export { ListCommentLikesResponse } from "./types/ListCommentLikesResponse";

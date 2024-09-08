@@ -1,6 +1,6 @@
 # cyberbus-js-client
 
-A javascript / typescript http client and type system for cyberbus. Forked from cyberbus.
+A javascript / typescript http client and type system for cyberbus. Forked from lemmy.
 
 ## Installation
 
