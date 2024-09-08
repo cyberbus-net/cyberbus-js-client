@@ -15,6 +15,7 @@ export interface EditSite {
   enable_nsfw?: boolean;
   community_creation_admin_only?: boolean;
   require_email_verification?: boolean;
+  require_invite_code?: boolean;
   application_question?: string;
   private_instance?: boolean;
   default_theme?: string;
