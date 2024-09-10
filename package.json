@@ -1,7 +1,7 @@
 {
   "name": "@cyberbus-net/cyberbus-js-client",
   "description": "A javascript / typescript client for Cyberbus",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": "karminski <code.karminski@outlook.com>",
   "license": "AGPL-3.0",
   "main": "./dist/index.js",
