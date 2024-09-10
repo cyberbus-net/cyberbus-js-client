@@ -167,4 +167,8 @@ export type CyberbusErrorType =
   | { error: "url_without_domain" }
   | { error: "inbox_timeout" }
   | { error: "unknown"; message: string }
-  | { error: "cant_delete_site" };
+  | { error: "cant_delete_site" }
+  | { error: "url_length_overflow" }
+  | { error: "invalied_invite_code" }
+  | { error: "request_cloud_control_api_failed" }
+  | { error: "invite_code_required" };

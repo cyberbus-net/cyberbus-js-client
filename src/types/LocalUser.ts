@@ -4,6 +4,7 @@ import type { LocalUserId } from "./LocalUserId";
 import type { PersonId } from "./PersonId";
 import type { PostListingMode } from "./PostListingMode";
 import type { SortType } from "./SortType";
+import type { TrophyCase } from "./TrophyCase";
 
 export interface LocalUser {
   id: LocalUserId;
@@ -31,4 +32,5 @@ export interface LocalUser {
   enable_keyboard_navigation: boolean;
   enable_animated_images: boolean;
   collapse_bot_comments: boolean;
+  trophy_case?: TrophyCase;
 }

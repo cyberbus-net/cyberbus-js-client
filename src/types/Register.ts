@@ -10,4 +10,5 @@ export interface Register {
   captcha_answer?: string;
   honeypot?: string;
   answer?: string;
+  invite_code?: string;
 }

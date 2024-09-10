@@ -249,13 +249,15 @@ export { SubscribedType } from "./types/SubscribedType";
 export { SuccessResponse } from "./types/SuccessResponse";
 export { Tagline } from "./types/Tagline";
 export { TransferCommunity } from "./types/TransferCommunity";
+export { Trophy } from "./types/Trophy";
+export { TrophyCase } from "./types/TrophyCase";
 export { UpdateTotp } from "./types/UpdateTotp";
 export { UpdateTotpResponse } from "./types/UpdateTotpResponse";
 export { VerifyEmail } from "./types/VerifyEmail";
 export { VoteView } from "./types/VoteView";
 export {
-  UploadImage,
-  UploadImageResponse,
-  ImageFile,
+  UploadImage, 
+  UploadImageResponse, 
+  ImageFile, 
   DeleteImage,
 } from "./other_types";
