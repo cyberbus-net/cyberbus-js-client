@@ -4,6 +4,7 @@ import type { CommunityModeratorView } from "./CommunityModeratorView";
 import type { PersonView } from "./PersonView";
 import type { PostView } from "./PostView";
 import type { Site } from "./Site";
+import type { TrophyCase } from "./TrophyCase";
 
 export interface GetPersonDetailsResponse {
   person_view: PersonView;
@@ -11,4 +12,5 @@ export interface GetPersonDetailsResponse {
   comments: Array<CommentView>;
   posts: Array<PostView>;
   moderates: Array<CommunityModeratorView>;
+  trophy_case?: TrophyCase;
 }
