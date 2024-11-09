@@ -239,6 +239,8 @@ export { SaveUserSettings } from "./types/SaveUserSettings";
 export { Search } from "./types/Search";
 export { SearchResponse } from "./types/SearchResponse";
 export { SearchType } from "./types/SearchType";
+export { SendVerifyEmail } from "./types/SendVerifyEmail";
+export { SendVerifyEmailResponse } from "./types/SendVerifyEmailResponse";
 export { Site } from "./types/Site";
 export { SiteAggregates } from "./types/SiteAggregates";
 export { SiteId } from "./types/SiteId";

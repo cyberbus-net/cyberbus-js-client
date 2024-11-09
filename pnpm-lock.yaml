@@ -7,6 +7,19 @@ settings:
 importers:
 
   .:
+    dependencies:
+      eslint-config-prettier:
+        specifier: ^9.1.0
+        version: 9.1.0(eslint@9.9.1)
+      eslint-scope:
+        specifier: ^8.0.2
+        version: 8.0.2
+      eslint-visitor-keys:
+        specifier: ^4.0.0
+        version: 4.0.0
+      prettier-linter-helpers:
+        specifier: ^1.0.0
+        version: 1.0.0
     devDependencies:
       '@types/node':
         specifier: ^22.1.0
@@ -1633,7 +1646,6 @@ snapshots:
   eslint-config-prettier@9.1.0(eslint@9.9.1):
     dependencies:
       eslint: 9.9.1
-    optional: true
 
   eslint-plugin-prettier@5.2.1(eslint-config-prettier@9.1.0(eslint@9.9.1))(eslint@9.9.1)(prettier@3.3.3):
     dependencies:

@@ -1,7 +1,7 @@
 {
   "name": "@cyberbus-net/cyberbus-js-client",
   "description": "A javascript / typescript client for Cyberbus",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "author": "karminski <code.karminski@outlook.com>",
   "license": "AGPL-3.0",
   "main": "./dist/index.js",
@@ -14,9 +14,19 @@
     "lint": "tsc --noEmit && eslint --report-unused-disable-directives && prettier --check src",
     "prepare": "pnpm run build && husky"
   },
+  "homepage": "https://github.com/cyberbus-net/cyberbus-js-client#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cyberbus-net/cyberbus-js-client.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cyberbus-net/cyberbus-js-client/issues"
+  },
+  "dependencies": {
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-scope": "^8.0.2",
+    "eslint-visitor-keys": "^4.0.0",
+    "prettier-linter-helpers": "^1.0.0"
   },
   "devDependencies": {
     "@types/node": "^22.1.0",
@@ -51,15 +61,5 @@
       "style": "module",
       "parser": "typescript"
     }
-  },
-  "dependencies": {
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-scope": "^8.0.2",
-    "eslint-visitor-keys": "^4.0.0",
-    "prettier-linter-helpers": "^1.0.0"
-  },
-  "bugs": {
-    "url": "https://github.com/cyberbus-net/cyberbus-js-client/issues"
-  },
-  "homepage": "https://github.com/cyberbus-net/cyberbus-js-client#readme"
+  }
 }

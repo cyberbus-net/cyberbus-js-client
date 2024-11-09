@@ -140,6 +140,8 @@ import { HidePost } from "./types/HidePost";
 import { ListMedia } from "./types/ListMedia";
 import { ListMediaResponse } from "./types/ListMediaResponse";
 import { GetRegistrationApplication } from "./types/GetRegistrationApplication";
+import { SendVerifyEmail } from "./types/SendVerifyEmail";
+import { SendVerifyEmailResponse } from "./types/SendVerifyEmailResponse";
 
 enum HttpType {
   Get = "GET",
@@ -1057,6 +1059,19 @@ export class CyberbusHttp {
       HttpType.Post,
       "/user/logout",
       {},
+    );
+  }
+
+  /**
+   * Send a verify email.
+   *
+   * `HTTP.POST /user/send_verify_email`
+   */
+  sendVerifyEmail(form: SendVerifyEmail) {
+    return this.#wrapper<SendVerifyEmail, SendVerifyEmailResponse>(
+      HttpType.Post,
+      "/user/send_verify_email",
+      form,
     );
   }
 
