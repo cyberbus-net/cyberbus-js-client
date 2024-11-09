@@ -171,4 +171,6 @@ export type CyberbusErrorType =
   | { error: "url_length_overflow" }
   | { error: "invalied_invite_code" }
   | { error: "request_cloud_control_api_failed" }
-  | { error: "invite_code_required" };
+  | { error: "invite_code_required" }
+  | { error: "email_not_found" }
+  | { error: "email_already_verified" };
